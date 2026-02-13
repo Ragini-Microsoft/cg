@@ -8,9 +8,6 @@
     "location": {
       "value": "${AZURE_LOCATION}"
     },
-    "secondaryLocation": {
-      "value": "${secondaryLocation}"
-    },
     "gptModelName": {
       "value": "${gptModelName}"
     },
@@ -39,28 +36,34 @@
       "value": "${azureOpenaiAPIVersion}"
     },
     "azureAiServiceLocation": {
-      "value": "${AZURE_ENV_OPENAI_LOCATION}"
+      "value": "${azureAiServiceLocation}"
     },
     "existingLogAnalyticsWorkspaceId": {
-      "value": "${AZURE_ENV_LOG_ANALYTICS_WORKSPACE_ID}"
+      "value": "${existingLogAnalyticsWorkspaceId}"
     },
     "azureExistingAIProjectResourceId": {
-      "value": "${AZURE_EXISTING_AI_PROJECT_RESOURCE_ID}"
+      "value": "${azureExistingAIProjectResourceId}"
     },
     "acrName": {
-      "value": "${ACR_NAME}"
+      "value": "${acrName}"
     },
     "imageTag": {
-      "value": "${IMAGE_TAG=latest}"
-    },
-    "enablePrivateNetworking": {
-      "value": true
+      "value": "${imageTag=latest}"
     },
     "enableMonitoring": {
       "value": true
     },
+    "enablePrivateNetworking": {
+      "value": true
+    },
     "enableScalability": {
       "value": true
+    },
+    "virtualMachineAdminUsername": {
+      "value": "${AZURE_ENV_VM_ADMIN_USERNAME}"
+    },
+    "virtualMachineAdminPassword": {
+      "value": "${AZURE_ENV_VM_ADMIN_PASSWORD}"
     }
   }
 }
